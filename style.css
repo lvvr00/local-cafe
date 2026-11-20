@@ -1,8 +1,10 @@
 @import url("typography.css");
+@import url("menu-style.css");
 
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -40,7 +42,7 @@ ul li {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-  }
+}
   
 /*logo*/
   .logo {

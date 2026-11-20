@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café</title>
+    <title>CRAVE | Café and Pastries</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,46 +12,119 @@
   </head>
 
   <body>
-      <header>
-          <div class="site-header">
-              <div class="wrap header-inner">
-                  <a href="index.html" class="logo">
-                      <span class="logo-mark">
-                          <img src="assets/cafe_logo.png" alt="CRAVE Logo">
-                      </span>
-                      <span class="logo-text">
-                          <span class="logo-name">CRAVE</span>
-                          <span class="logo-subtitle">Café &amp; Pastries</span>
-                      </span>
-                  </a>
+    <header>
+      <div class="site-header">
+        <div class="wrap header-inner">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">
+                <img src="assets/cafe_logo.png" alt="CRAVE Logo">
+            </span>
+            <span class="logo-text">
+                <span class="logo-name">CRAVE</span>
+                <span class="logo-subtitle">Café &amp; Pastries</span>
+            </span>
+          </a>
 
-              <nav class="nav-desktop" aria-label="Primary">
-                  <a href="index.html" >Home</a>
-                  <a href="about.html">Our Story</a>
-                  <a href="menu.html" class="active">Menu</a>
-                  <a href="news.html">News &amp; Promos</a>
-                  <a href="contact.html">Visit Us</a>
-              </nav>
+          <nav class="nav-desktop" aria-label="Primary">
+              <a href="index.html">Home</a>
+              <a href="about.html">Our Story</a>
+              <a href="menu.html" class="active">Menu</a>
+              <a href="news.html">News &amp; Promos</a>
+              <a href="contact.html">Visit Us</a>
+          </nav>
 
-              <div class="header-actions">
-                  <a href="order.html" class="btn btn-filled order-btn-desktop">Order Now</a>
-                  <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
-                  </label>
+          <div class="header-actions">
+              <a href="order.html" class="btn btn-filled order-btn-desktop">Order Now</a>
+              <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+              </label>
+          </div>
+        </div>
+      </div>   
+          
+  </header>
+
+      <main>
+        <section>
+          <div class="menu">
+            <div class="menu_hero">
+              <h2>sip, <br> bite, <br> unwind...!</h2>
+              <div class="menu_hero_pic">
+                <img src="assets/menu-banner.png" alt="matcha latte" style="display: none">
               </div>
-              </nav>
-          </div>   
-              
-      </header>
+              <h3 id="menu-h3">brewed with love and care</h3>
+            </div>
 
+            <div class=" wrap menu-layout">
+              <div>
+                <nav class="menu-filters" id="filters">
+                  <button class="filter active" data-filter="all">All</button>
+                  <button class="filter" data-filter="coffee">Coffee</button>
+                  <button class="filter" data-filter="specials">Specials</button>
+                  <button class="filter" data-filter="pastries">Pastries</button>
+                </nav>
+              </div>
 
-        <main>
-            
-            </section>
+              <div class="menu-items">
+                <article class="item" data-cat="coffee">
+                  <div class="item-pictures">
+                    <img src="assets/iced-latte.png" alt="caramel latte">
+                  </div> 
+                  <h3 class="item-name">Iced Latte</h3>
+                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                  <p class="item-price">$3.50</p>
+                </article>
 
-            <section>
+                <article class="item" data-cat="coffee">
+                  <div class="item-pictures">
+                    <img src="assets/matcha-latte.png" alt="matcha latte">
+                  </div> 
+                  <h3 class="item-name">Caramel Latte</h3>
+                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                  <p class="item-price">$3.50</p>
+                </article>
 
-            </section>
-        </main>
+                <article class="item" data-cat="coffee">
+                  <div class="item-pictures">
+                    <img src="assets/caramel latte.png" alt="caramel latte">
+                  </div> 
+                  <h3 class="item-name">Caramel Latte</h3>
+                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                  <p class="item-price">$3.50</p>
+                </article>
+
+                <article class="item" data-cat="pastries">
+                  <div class="item-pictures">
+                    <img src="assets/cinnaroll.png" alt="caramel latte">
+                  </div>
+                  <h3 class="item-name">Cinnamon Roll</h3>
+                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                  <p class="item-price">$3.50</p>
+                </article>
+
+                <article class="item" data-cat="pastries">
+                  <div class="item-pictures">
+                    <img src="assets/croissant.png" alt="croissant">
+                  </div>
+                  <h3 class="item-name">Croissant</h3>
+                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                  <p class="item-price">$3.50</p>
+                </article>
+
+                <article class="item" data-cat="pastries">
+                  <div class="item-pictures">
+                    <img src="assets/chocoroll.png" alt="caramel latte">
+                  </div>
+                  <h3 class="item-name">Chocolate Roll</h3>
+                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                  <p class="item-price">$3.50</p>
+                </article>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
 
         <!--footer sections-->
         <footer class="site-footer"> 
