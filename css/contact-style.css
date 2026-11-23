@@ -1,0 +1,30 @@
+.contacts-section-head h1 {
+    font-size: 2rem;
+
+}
+
+.contacts-section-head p {
+    font-size: 1.05rem;
+}
+
+.contacts-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 1.5rem;
+    color: black;
+}
+
+.contacts-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.contacts-card p {
+    font-weight:700;
+    margin-top:.25rem;
+    letter-spacing: 0.1rem;
+}

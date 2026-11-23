@@ -2,6 +2,7 @@
 @import url("/css/menu-style.css");
 @import url("/css/about-style.css");
 @import url("/css/news-style.css");
+@import url("/css/contact-style.css");
 
 * {
     box-sizing: border-box;
@@ -24,8 +25,8 @@ ul li {
 
 .wrap {
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    margin: auto;
+    padding: 1.5rem;
 }
 
 /* header section */
