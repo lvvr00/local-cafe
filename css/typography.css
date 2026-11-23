@@ -283,8 +283,30 @@ h1,h2,h3,h4 {
 
 /*menu page*/
 
+.menu-title h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-title p {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
 .item {
     text-align: center;
+}
+
+.menu-food-section h2 {
+    letter-spacing: 10px;
+    text-align: center;
+    margin: 50px;
 }
 
 .item-name {
@@ -300,7 +322,6 @@ h1,h2,h3,h4 {
     line-height: 1.5;
     font-style: italic;
     text-transform: lowercase;
-    color: var(--text);
 }
 
 .item-price {

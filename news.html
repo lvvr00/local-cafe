@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   </head>
 
@@ -20,7 +20,7 @@
                           <img src="assets/cafe_logo.png" alt="CRAVE Logo">
                       </span>
                       <span class="logo-text">
-                          <span class="logo-name">CRAVE</span>
+                          <span class="logo-name">Local café</span>
                           <span class="logo-subtitle">Café &amp; Pastries</span>
                       </span>
                   </a>
@@ -45,12 +45,57 @@
 
 
         <main>
-            
-            </section>
+          <section  class="news-background" id="promotion">
+            <div class="wrap news-content">
+              <h2>Promotion</h2>
+              <p>Fresh deals from our counter to your cup</p>
+              <div class="banner">
+                  <div><strong>Weekend Special: LocalCoffee at 30% off</strong></div>
+              </div>
+            </div>
 
-            <section>
+            <div class="wrap">
+              <div class="grid">
+                <article class="deal">
+                    <div>
+                        <h3>Buy 1 Get 1 Free</h3>
+                        <p>Every Monday on any hot series</p>
+                        <span class="tag">Monday</span>
+                    </div>
+                </article>
+                <article class="deal">
+                    <div>
+                        <h3>Student Discount</h3>
+                        <p>10% off with valid student card</p>
+                        <span class="tag">Student</span>
+                    </div>
+                </artical>
+                <artical class="deal">
+                    <div>
+                        <h3>Morning combo</h3>
+                        <p>Any coffee plus a pastry for $5</p>
+                        <span class="tag">Before 10 AM</span>
+                    </div>
+                  </article>
+              </div>
 
-            </section>
+              <div class="row">
+                  <div class="box">
+                      <h3>Loyalty Card</h3>
+                      <p class="sub" style="margin-bottom:0">Tap a cup to add a stamp. The 10th coffee is free!</p>
+                      <div class="stamps" id="stamps"></div>
+                      <div class="msg" id="stampMsg"></div>
+                  </div>
+                  <div class="box">
+                      <h3>Promo Code</h3>
+                      <label for="code">Have a code? Try COFFEE10</label>
+                      <input id="code" placeholder="Enter code">
+                      <button class="cta" id="applyCode" type="button">Apply</button>
+                      <div class="msg" id="codeMsg"></div>
+                  </div>
+            </div>
+            </div>
+        </section>
         </main>
 
         <!--footer sections-->

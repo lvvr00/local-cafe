@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   </head>
 
@@ -41,90 +41,185 @@
         </div>
       </div>   
           
-  </header>
+    </header>
 
-      <main>
-        <section>
-          <div class="menu">
-            <div class="menu_hero">
-              <h2>sip, <br> bite, <br> unwind...!</h2>
-              <div class="menu_hero_pic">
-                <img src="assets/menu-banner.png" alt="matcha latte" style="display: none">
-              </div>
-              <h3 id="menu-h3">brewed with love and care</h3>
+    <main>
+        <div class="menu">
+          <div class="menu_hero">
+            <h2>sip, <br> bite, <br> &amp; unwind...!</h2>
+            <div class="menu_hero_pic">
+              <img src="assets/menu-banner.png" alt="matcha latte" style="display: none">
+            </div>
+            <h3 id="menu-h3">brewed with love and care</h3>
+          </div>
+
+          <div class="menu-second-grid">
+            <div class="menu-title">
+              <h2>Menu</h2>
+              <p>grab your daily dose of seratonin!</p>
+            </div>
+          </div>
+
+          <div class="menu-layout">
+            <div>
+              <nav class="menu-filters" id="filters">
+                <a href="#all" class="filter active">All</a>
+                <a href="#coffee">Coffee</a>
+                <a href="#non-coffee" class="filter">Non-coffee</a>
+                <a href="#specials" class="filter">Specials</a>
+                <a href="#pastries" class="filter">Pastries</a>
+              </nav>
             </div>
 
-            <div class=" wrap menu-layout">
-              <div>
-                <nav class="menu-filters" id="filters">
-                  <button class="filter active" data-filter="all">All</button>
-                  <button class="filter" data-filter="coffee">Coffee</button>
-                  <button class="filter" data-filter="specials">Specials</button>
-                  <button class="filter" data-filter="pastries">Pastries</button>
-                </nav>
-              </div>
+              <!--menu items section (add more stuff later)-->
 
               <div class="menu-items">
-                <article class="item" data-cat="coffee">
-                  <div class="item-pictures">
-                    <img src="assets/iced-latte.png" alt="caramel latte">
-                  </div> 
-                  <h3 class="item-name">Iced Latte</h3>
-                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
-                  <p class="item-price">$3.50</p>
-                </article>
 
-                <article class="item" data-cat="coffee">
-                  <div class="item-pictures">
-                    <img src="assets/matcha-latte.png" alt="matcha latte">
-                  </div> 
-                  <h3 class="item-name">Caramel Latte</h3>
-                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
-                  <p class="item-price">$3.50</p>
-                </article>
-
-                <article class="item" data-cat="coffee">
-                  <div class="item-pictures">
-                    <img src="assets/caramel latte.png" alt="caramel latte">
-                  </div> 
-                  <h3 class="item-name">Caramel Latte</h3>
-                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
-                  <p class="item-price">$3.50</p>
-                </article>
-
-                <article class="item" data-cat="pastries">
-                  <div class="item-pictures">
-                    <img src="assets/cinnaroll.png" alt="caramel latte">
+                <section class="menu-food-section" id="best-seller">
+                  <h2>------------featured drinks------------</h2>
+                </section>
+                
+                <section class="menu-food-section" id="coffee">
+                  <h2>-------------------coffee-------------------</h2>
+                  <div class="menu-stuff">
+                    <article class="item">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/americano.png" alt="americano">
+                      </div> 
+                      <h3 class="item-name">Americano</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
+                    <article class="item">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/iced-latte.png" alt="caramel latte">
+                      </div> 
+                      <h3 class="item-name">Iced Latte</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
+                    <article class="item" data-cat="coffee">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/cappucino.png" alt="cappucino">
+                      </div> 
+                      <h3 class="item-name">Cappucino</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
+                    <article class="item" data-cat="coffee">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/caramel latte.png" alt="caramel latte">
+                      </div> 
+                      <h3 class="item-name">Espresso</h3>
+                      <p class="item-desc">a shot of espresso with salted caramel and whipped cream on top</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
+                    <article class="item" data-cat="coffee">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/caramel latte.png" alt="caramel latte">
+                      </div> 
+                      <h3 class="item-name">Caramel Latte</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
                   </div>
-                  <h3 class="item-name">Cinnamon Roll</h3>
-                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
-                  <p class="item-price">$3.50</p>
-                </article>
+                </section>
 
-                <article class="item" data-cat="pastries">
-                  <div class="item-pictures">
-                    <img src="assets/croissant.png" alt="croissant">
+                <section class="menu-food-section" id="non-coffee">
+                  <h2>-------------------Non Coffee-----------</h2>
+                  <div class="menu-stuff">
+                    <article class="item" data-cat="coffee">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/matcha-latte.png" alt="matcha latte">
+                      </div> 
+                      <h3 class="item-name">Matcha Latte</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
+                    <article class="item" data-cat="coffee">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/hot-choco.png" alt="hot chocolate">
+                      </div> 
+                      <h3 class="item-name">Hot Chocolate</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
+  
+                    <article class="item" data-cat="coffee">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/chai-tea.png" alt="chai tea">
+                      </div> 
+                      <h3 class="item-name">Spiced Chai Tea</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </article>
                   </div>
-                  <h3 class="item-name">Croissant</h3>
-                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
-                  <p class="item-price">$3.50</p>
-                </article>
 
-                <article class="item" data-cat="pastries">
-                  <div class="item-pictures">
-                    <img src="assets/chocoroll.png" alt="caramel latte">
+                </section>
+
+                <section class="menu-food-section" id="pastries">
+                  <h2>--------Pastries-----------</h2>
+                  <div class="menu-stuff">
+                    <div class="item">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/cinnaroll.png" alt="caramel latte">
+                      </div>
+                      <h3 class="item-name">Cinnamon Roll</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </div>
+  
+                    <div  class="item" data-cat="pastries">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/croissant.png" alt="croissant">
+                      </div>
+                      <h3 class="item-name">Croissant</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </div>
+                    
+                    <div class="item">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/choco-chip-cookie.png" alt="croissant">
+                      </div>
+                      <h3 class="item-name">Chocolate Chip Cookie</h3>
+                      <p class="item-desc">soft and chewy cookie filled with chocolate surprises</p>
+                      <p class="item-price">$2.50</p>
+                    </div>
+  
+                    <div class="item">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/chocoroll.png" alt="caramel latte">
+                      </div>
+                      <h3 class="item-name">Chocolate Roll</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </div>
+  
+                    <div class="item">
+                      <div class="item-pictures">
+                        <img src="assets/menu-pictures/peach-pie.png" alt="caramel latte">
+                      </div>
+                      <h3 class="item-name">Peach Pie</h3>
+                      <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
+                      <p class="item-price">$3.50</p>
+                    </div>
                   </div>
-                  <h3 class="item-name">Chocolate Roll</h3>
-                  <p class="item-desc">Espresso, steamed milk, salted caramel, and whipped cream</p>
-                  <p class="item-price">$3.50</p>
-                </article>
-
+                </section>
               </div>
-            </div>
 
+            </div>
           </div>
-        </section>
-      </main>
+
+        </div>
+      </section>
+    </main>
 
         <!--footer sections-->
         <footer class="site-footer"> 
