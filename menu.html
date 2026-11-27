@@ -1,108 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | CRAVE Café &amp; Pastries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body class="menu-page">
+  <header>
+    <div class="site-header">
+      <div class="wrap header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">
+            <img src="assets/cafe_logo.png" alt="CRAVE Café Logo">
+          </span>
+          <span class="logo-text">
+            <span class="logo-name">CRAVE</span>
+            <span class="logo-subtitle">Café &amp; Pastries</span>
+          </span>
+        </a>
 
-  <body>
-      <header>
-          <div class="site-header">
-              <div class="wrap header-inner">
-                  <a href="index.html" class="logo">
-                      <span class="logo-mark">
-                          <img src="assets/cafe_logo.png" alt="CRAVE Logo">
-                      </span>
-                      <span class="logo-text">
-                          <span class="logo-name">CRAVE</span>
-                          <span class="logo-subtitle">Café &amp; Pastries</span>
-                      </span>
-                  </a>
+        <nav class="nav-desktop">
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="menu.html" class="active">Menu</a>
+          <a href="news.html">News &amp; Promos</a>
+          <a href="contact.html">Visit Us</a>
+        </nav>
 
-              <nav class="nav-desktop" aria-label="Primary">
-                  <a href="index.html" >Home</a>
-                  <a href="about.html">Our Story</a>
-                  <a href="menu.html" class="active">Menu</a>
-                  <a href="news.html">News &amp; Promos</a>
-                  <a href="contact.html">Visit Us</a>
-              </nav>
+        <div class="header-actions">
+          <a href="order.html" class="btn btn-filled order-btn-desktop">Order Now</a>
+          <label for="nav-toggle" class="hamburger"></label>
+        </div>
+      </div>
+    </div>
+  </header>
 
-              <div class="header-actions">
-                  <a href="order.html" class="btn btn-filled order-btn-desktop">Order Now</a>
-                  <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
-                  </label>
+  <main class="menu-main">
+    <!-- Page Banner -->
+    <section class="menu-banner">
+      <div class="wrap">
+        <p class="menu-eyebrow semi-bold">Brewed &amp; Baked Fresh Daily</p>
+        <h1 class="menu-banner-title">Our Café Menu</h1>
+        <p class="menu-banner-desc">
+          Small-batch espresso, ceremonial Uji matcha, and warm pastries made every morning in our Phnom Penh kitchen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Category Jump Navigation -->
+    <section class="menu-nav-section">
+      <div class="wrap">
+        <nav class="menu-tabs">
+          <ul class="menu-tab-list">
+            <li><a href="#menu-signature" class="menu-tab-link semi-bold">Signature Drinks</a></li>
+            <li><a href="#menu-coffee" class="menu-tab-link semi-bold">Coffee &amp; Espresso</a></li>
+            <li><a href="#menu-pastries" class="menu-tab-link semi-bold">Fresh Pastries</a></li>
+            <li><a href="#menu-notes" class="menu-tab-link semi-bold">Milk &amp; Bake Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Signature Drinks Section -->
+    <section id="menu-signature" class="menu-section">
+      <div class="wrap">
+        <div class="menu-section-head">
+          <h2 class="menu-section-title">Signature Drinks</h2>
+          <p class="menu-section-sub">Our house favorites crafted with seasonal flavors and local ingredients.</p>
+        </div>
+
+        <div class="menu-items-grid">
+          <article class="menu-item-card">
+            <img src="assets/strawberry-matcha-latte.jpg" alt="Layered Strawberry Matcha Latte in a clear glass" class="menu-item-img">
+            <div class="menu-item-body">
+              <span class="menu-badge semi-bold">Best Seller</span>
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Strawberry Matcha Latte</h3>
+                <span class="menu-item-price bold">$5.95</span>
               </div>
-              </nav>
-          </div>   
-              
-      </header>
-
-
-        <main>
-            
-            </section>
-
-            <section>
-
-            </section>
-        </main>
-
-        <!--footer sections-->
-        <footer class="site-footer"> 
-          <div class="wrap footer-grid">
-            <div class="footer-brand">
-              <div class="logo">
-                  <a href="index.html" class="logo">
-                      <span class="logo-mark">
-                          <img src="assets/cafe_logo.png" alt="CRAVE Logo">
-                      </span>
-                      <span class="logo-text-footer">
-                          <span class="logo-name-footer">CRAVE</span>
-                      </span>
-                  </a>
+              <p class="menu-item-desc">House strawberry compote layered with creamy milk and whisked Uji matcha.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Iced · Regular / Large</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
               </div>
-              <p>A cozy neighborhood safe haven serving hot espresso,and fresh pastries and cinnamon rolls daily.</p>
             </div>
-            <div>
-              <h4>Explore</h4>
-              <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="about.html">Our Story</a></li>
-                <li><a href="menu.html">Drinks &amp; Pastries Menu</a></li>
-                <li><a href="news.html">Events &amp; Promo</a></li>
-              </ul>
+          </article>
+
+          <article class="menu-item-card">
+            <img src="assets/strawberry-matcha.jpg" alt="Iced Strawberry Matcha Cream topped with whipped mascarpone" class="menu-item-img">
+            <div class="menu-item-body">
+              <span class="menu-badge semi-bold">Seasonal</span>
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Iced Strawberry Matcha Cream</h3>
+                <span class="menu-item-price bold">$6.15</span>
+              </div>
+              <p class="menu-item-desc">Chilled berry-matcha blend finished with silky whipped mascarpone foam.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Iced · Regular / Large</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
             </div>
-            <div>
-              <h4>Hours</h4>
-              <ul>
-                <li>Mon – Fri: 7:00 AM – 7:00 PM</li>
-                <li>Saturday: 8:00 AM – 8:00 PM</li>
-                <li>Sunday: 8:00 AM – 6:00 PM</li>
-              </ul>
+          </article>
+
+          <article class="menu-item-card">
+            <img src="assets/ice_latte.jpg" alt="Honey Oat Iced Latte with espresso swirl" class="menu-item-img">
+            <div class="menu-item-body">
+              <span class="menu-badge semi-bold">House Favorite</span>
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Honey Oat Latte</h3>
+                <span class="menu-item-price bold">$5.75</span>
+              </div>
+              <p class="menu-item-desc">Double-shot espresso paired with wildflower honey and smooth oat milk.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Hot or Iced · Regular / Large</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
             </div>
-            <div>
-              <h4>Find Us</h4>
-              <ul>
-                <li> 123 ABC Avenue<br>Something District</li>
-                <li><a href="contact.html" class="footer-link-accent">Get Directions &amp; Hours →</a></li>
-              </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee & Espresso Section -->
+    <section id="menu-coffee" class="menu-section menu-section-tinted">
+      <div class="wrap">
+        <div class="menu-section-head">
+          <h2 class="menu-section-title">Coffee &amp; Espresso</h2>
+          <p class="menu-section-sub">Locally roasted Mondulkiri beans pulled fresh for every cup.</p>
+        </div>
+
+        <div class="menu-items-grid">
+          <article class="menu-item-card">
+            <img src="assets/ice_latte.jpg" alt="Espresso Cold Brew over clear ice cubes" class="menu-item-img">
+            <div class="menu-item-body">
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Espresso Cold Brew</h3>
+                <span class="menu-item-price bold">$5.25</span>
+              </div>
+              <p class="menu-item-desc">Slow-steeped 18-hour cold brew topped with light vanilla espresso cream.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Iced · Regular / Large</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
             </div>
+          </article>
+
+          <article class="menu-item-card">
+            <img src="assets/cafe.jpg" alt="Freshly roasted coffee beans and classic espresso cup" class="menu-item-img">
+            <div class="menu-item-body">
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Classic Cappuccino</h3>
+                <span class="menu-item-price bold">$4.50</span>
+              </div>
+              <p class="menu-item-desc">Rich double espresso balanced with steamed milk and velvety micro-foam.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Hot · Regular / Large</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <img src="assets/cafe-counter.jpg" alt="Barista preparing a salted caramel macchiato at the counter" class="menu-item-img">
+            <div class="menu-item-body">
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Salted Caramel Macchiato</h3>
+                <span class="menu-item-price bold">$5.45</span>
+              </div>
+              <p class="menu-item-desc">Bold espresso poured over milk, Madagascar vanilla, and sea-salt caramel.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Hot or Iced · Regular / Large</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fresh Pastries Section -->
+    <section id="menu-pastries" class="menu-section">
+      <div class="wrap">
+        <div class="menu-section-head">
+          <h2 class="menu-section-title">Fresh Pastries &amp; Warm Plates</h2>
+          <p class="menu-section-sub">Baked in small batches every morning until sold out.</p>
+        </div>
+
+        <div class="menu-items-grid">
+          <article class="menu-item-card">
+            <img src="assets/souffle.jpg" alt="Fluffy Japanese Pancake Soufflé with whipped cream and syrup" class="menu-item-img">
+            <div class="menu-item-body">
+              <span class="menu-badge menu-badge-baked semi-bold">Made to Order</span>
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Pancake Soufflé</h3>
+                <span class="menu-item-price bold">$7.50</span>
+              </div>
+              <p class="menu-item-desc">Cloud-soft Japanese-style pancakes served warm with whipped cream and maple syrup.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Served Warm · 15 mins</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <img src="assets/pastry.jpg" alt="Golden flaky butter croissants and morning pastries" class="menu-item-img">
+            <div class="menu-item-body">
+              <span class="menu-badge menu-badge-baked semi-bold">Fresh Baked</span>
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Flaky Butter Croissant</h3>
+                <span class="menu-item-price bold">$3.95</span>
+              </div>
+              <p class="menu-item-desc">Crisp golden layers made with French butter, baked fresh at 6:30 AM daily.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Warm or Room Temp</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <img src="assets/lounge.jpg" alt="Cozy pastry plate with cardamom cinnamon roll on a wooden table" class="menu-item-img">
+            <div class="menu-item-body">
+              <span class="menu-badge menu-badge-baked semi-bold">Fresh Baked</span>
+              <div class="menu-item-top">
+                <h3 class="menu-item-name">Cardamom &amp; Cinnamon Roll</h3>
+                <span class="menu-item-price bold">$4.85</span>
+              </div>
+              <p class="menu-item-desc">Soft brioche swirled with cinnamon, freshly ground cardamom, and vanilla glaze.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-meta">Served Warm</span>
+                <a href="order.html" class="menu-order-link semi-bold">Order Ahead →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Café Notes & Add-Ons -->
+    <section id="menu-notes" class="menu-info-section">
+      <div class="wrap">
+        <div class="menu-info-row">
+          <div class="menu-info-box">
+            <h3 class="menu-info-title">Customizations &amp; Add-Ons</h3>
+            <ul class="menu-info-list">
+              <li><span class="semi-bold">Large Size Upgrade:</span> +$0.75 for any drink</li>
+              <li><span class="semi-bold">Milk Choices:</span> Whole, Oat, Soy, or Almond (+$0.50)</li>
+              <li><span class="semi-bold">Extra Espresso Shot:</span> +$0.80</li>
+              <li><span class="semi-bold">Sweetness Levels:</span> 0%, 25%, 50%, 75%, or 100%</li>
+            </ul>
           </div>
-          <div class="wrap footer-bottom">
-            <p>© 2026 CRAVE Café. Crafted with warm espresso &amp; care.</p>
-            <div class="social-media">
-              <a href="">Instagram</a>
-              <a href="">Facebook</a>
-              <a href="">Tiktok</a>
-            </div>
+
+          <div class="menu-info-box menu-cta-box">
+            <h3 class="menu-info-title">Skip the Morning Line</h3>
+            <p class="menu-cta-text">
+              Ready to order? Place your order online for quick counter pickup or local delivery in Phnom Penh.
+              Use code <span class="bold">CRAVE10</span> for 10% off your order.
+            </p>
+            <a href="order.html" class="menu-cta-btn semi-bold">Go to Order Ahead</a>
           </div>
-        </footer>
-          
-    </body>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">
+              <img src="assets/cafe_logo.png" alt="CRAVE Logo">
+            </span>
+            <span class="logo-text-footer">
+              <span class="logo-name-footer">CRAVE</span>
+            </span>
+          </a>
+        </div>
+        <p>A cozy neighborhood safe haven serving hot espresso, and fresh pastries and cinnamon rolls daily.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="menu.html">Drinks &amp; Pastries Menu</a></li>
+          <li><a href="news.html">Events &amp; Promo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri: 7:00 AM – 7:00 PM</li>
+          <li>Saturday: 8:00 AM – 8:00 PM</li>
+          <li>Sunday: 8:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find Us</h4>
+        <ul>
+          <li>123 ABC Avenue<br>Something District</li>
+          <li><a href="contact.html" class="footer-link-accent">Get Directions &amp; Hours →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© 2026 CRAVE Café. Crafted with warm espresso &amp; care.</p>
+      <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Tiktok</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
