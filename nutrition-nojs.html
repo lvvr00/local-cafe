@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nutrition &amp; Allergens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,700&family=Outfit:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nu-header">
+    <a class="nu-back" href="menu.html">&larr; back to menu</a>
+    <h1>what’s in your order?</h1>
+    <p>Tap a section, then an item, to see its nutrition, ingredients and allergens.</p>
+  </header>
+
+  <!-- NOTE: all numbers, ingredients and allergens are PLACEHOLDERS. Replace with your real info. -->
+  <main class="nu-list" id="nutrition-list">
+
+  <section class="group group-drink" id="sec-featured-drinks">
+    <a class="group-head" href="#sec-featured-drinks">
+      <h2>featured drinks</h2>
+      <span class="group-count">1 item</span>
+      <span class="chev" aria-hidden="true"></span>
+    </a>
+    <div class="group-body">
+    <article class="card" id="straw-matcha-latte">
+      <a class="card-head" href="#straw-matcha-latte">
+        <span class="thumb"><img src="assets/menu-pictures/straw-matcha-latte.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Strawberry Matcha Latte</span>
+          <span class="card-cal">240 cal &middot; 16 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-featured-drinks">close &times;</a>
+        <div class="cal-badge"><strong>240</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>7g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>38g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>31g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>8g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>70mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Matcha, Strawberry purée, Milk, Cane sugar, Ice</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+      <a class="close-link" href="#nutrition-list">close section</a>
+    </div>
+  </section>
+
+  <section class="group group-drink" id="sec-coffee">
+    <a class="group-head" href="#sec-coffee">
+      <h2>coffee</h2>
+      <span class="group-count">5 items</span>
+      <span class="chev" aria-hidden="true"></span>
+    </a>
+    <div class="group-body">
+    <article class="card" id="americano">
+      <a class="card-head" href="#americano">
+        <span class="thumb"><img src="assets/menu-pictures/americano.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Americano</span>
+          <span class="card-cal">15 cal &middot; 12 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-coffee">close &times;</a>
+        <div class="cal-badge"><strong>15</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>0g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>3g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>0g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>1g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>150mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Espresso, Hot water</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill pill-none">No major allergens listed</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="iced-latte">
+      <a class="card-head" href="#iced-latte">
+        <span class="thumb"><img src="assets/menu-pictures/iced-latte.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Iced Latte</span>
+          <span class="card-cal">130 cal &middot; 16 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-coffee">close &times;</a>
+        <div class="cal-badge"><strong>130</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>7g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>11g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>10g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>8g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>150mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Espresso, Milk, Ice</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="cappucino">
+      <a class="card-head" href="#cappucino">
+        <span class="thumb"><img src="assets/menu-pictures/cappucino.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Cappucino</span>
+          <span class="card-cal">120 cal &middot; 12 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-coffee">close &times;</a>
+        <div class="cal-badge"><strong>120</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>6g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>10g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>9g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>7g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>150mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Espresso, Steamed milk, Milk foam</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="espresso">
+      <a class="card-head" href="#espresso">
+        <span class="thumb"><img src="assets/menu-pictures/espresso.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Espresso</span>
+          <span class="card-cal">190 cal &middot; 2 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-coffee">close &times;</a>
+        <div class="cal-badge"><strong>190</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>9g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>24g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>22g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>2g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>125mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Espresso, Salted caramel, Whipped cream</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="caramel-latte">
+      <a class="card-head" href="#caramel-latte">
+        <span class="thumb"><img src="assets/menu-pictures/caramel-latte.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Caramel Latte</span>
+          <span class="card-cal">290 cal &middot; 16 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-coffee">close &times;</a>
+        <div class="cal-badge"><strong>290</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>11g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>38g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>34g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>9g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>150mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Espresso, Steamed milk, Salted caramel, Whipped cream</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+      <a class="close-link" href="#nutrition-list">close section</a>
+    </div>
+  </section>
+
+  <section class="group group-drink" id="sec-non-coffee">
+    <a class="group-head" href="#sec-non-coffee">
+      <h2>non coffee</h2>
+      <span class="group-count">5 items</span>
+      <span class="chev" aria-hidden="true"></span>
+    </a>
+    <div class="group-body">
+    <article class="card" id="matcha-latte">
+      <a class="card-head" href="#matcha-latte">
+        <span class="thumb"><img src="assets/menu-pictures/matcha-latte.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Matcha Latte</span>
+          <span class="card-cal">190 cal &middot; 16 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-non-coffee">close &times;</a>
+        <div class="cal-badge"><strong>190</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>7g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>22g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>19g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>8g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>70mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Matcha, Milk, Cane sugar</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="hot-choco">
+      <a class="card-head" href="#hot-choco">
+        <span class="thumb"><img src="assets/menu-pictures/hot-choco.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Hot Chocolate</span>
+          <span class="card-cal">320 cal &middot; 12 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-non-coffee">close &times;</a>
+        <div class="cal-badge"><strong>320</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>12g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>46g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>40g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>9g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>15mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Milk, Cocoa, Dark chocolate, Whipped cream</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span><span class="pill">Soy</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="chai-tea">
+      <a class="card-head" href="#chai-tea">
+        <span class="thumb"><img src="assets/menu-pictures/chai-tea.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Spiced Chai Tea</span>
+          <span class="card-cal">210 cal &middot; 12 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-non-coffee">close &times;</a>
+        <div class="cal-badge"><strong>210</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>5g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>38g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>35g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>6g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>50mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Black tea, Milk, Honey, Cardamom, Cinnamon, Ginger</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="boba-milk-tea">
+      <a class="card-head" href="#boba-milk-tea">
+        <span class="thumb"><img src="assets/menu-pictures/boba-milk-tea.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Boba Milk Tea</span>
+          <span class="card-cal">360 cal &middot; 16 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-non-coffee">close &times;</a>
+        <div class="cal-badge"><strong>360</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>8g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>66g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>48g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>5g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>60mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Black tea, Milk, Tapioca pearls, Brown sugar syrup</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="iced-lemon-tea">
+      <a class="card-head" href="#iced-lemon-tea">
+        <span class="thumb"><img src="assets/menu-pictures/iced-lemon-tea.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Iced Lemon Tea</span>
+          <span class="card-cal">110 cal &middot; 16 oz</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-non-coffee">close &times;</a>
+        <div class="cal-badge"><strong>110</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>0g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>28g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>26g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>0g</dd></div>
+          <div class="fact"><dt>Caffeine</dt><dd>40mg</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Black tea, Lemon, Cane sugar, Ice</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill pill-none">No major allergens listed</span></div></div>
+      </div>
+    </article>
+      <a class="close-link" href="#nutrition-list">close section</a>
+    </div>
+  </section>
+
+  <section class="group group-bake" id="sec-pastries">
+    <a class="group-head" href="#sec-pastries">
+      <h2>pastries</h2>
+      <span class="group-count">5 items</span>
+      <span class="chev" aria-hidden="true"></span>
+    </a>
+    <div class="group-body">
+    <article class="card" id="cinnaroll">
+      <a class="card-head" href="#cinnaroll">
+        <span class="thumb"><img src="assets/menu-pictures/cinnaroll.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Cinnamon Roll</span>
+          <span class="card-cal">420 cal &middot; 1 roll (120 g)</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-pastries">close &times;</a>
+        <div class="cal-badge"><strong>420</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>18g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>58g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>28g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>6g</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Wheat flour, Butter, Cinnamon, Sugar, Cream cheese icing, Egg</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Gluten</span><span class="pill">Milk</span><span class="pill">Egg</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="croissant">
+      <a class="card-head" href="#croissant">
+        <span class="thumb"><img src="assets/menu-pictures/croissant.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Croissant</span>
+          <span class="card-cal">270 cal &middot; 1 piece (70 g)</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-pastries">close &times;</a>
+        <div class="cal-badge"><strong>270</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>15g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>29g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>4g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>5g</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Wheat flour, Butter, Yeast, Salt, Egg wash</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Gluten</span><span class="pill">Milk</span><span class="pill">Egg</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="choco-chip-cookie">
+      <a class="card-head" href="#choco-chip-cookie">
+        <span class="thumb"><img src="assets/menu-pictures/choco-chip-cookie.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Chocolate Chip Cookie</span>
+          <span class="card-cal">340 cal &middot; 1 cookie (80 g)</span>
+        </span>
+        <span class="price-pill">$2.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-pastries">close &times;</a>
+        <div class="cal-badge"><strong>340</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>17g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>44g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>28g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>4g</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Wheat flour, Butter, Brown sugar, Chocolate chips, Egg, Vanilla</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Gluten</span><span class="pill">Milk</span><span class="pill">Egg</span><span class="pill">Soy</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="chocoroll">
+      <a class="card-head" href="#chocoroll">
+        <span class="thumb"><img src="assets/menu-pictures/chocoroll.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Chocolate Roll</span>
+          <span class="card-cal">390 cal &middot; 1 roll (110 g)</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-pastries">close &times;</a>
+        <div class="cal-badge"><strong>390</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>19g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>50g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>26g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>6g</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Wheat flour, Butter, Cocoa, Chocolate, Sugar, Egg</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Gluten</span><span class="pill">Milk</span><span class="pill">Egg</span><span class="pill">Soy</span></div></div>
+      </div>
+    </article>
+    <article class="card" id="peach-pie">
+      <a class="card-head" href="#peach-pie">
+        <span class="thumb"><img src="assets/menu-pictures/peach-pie.png" alt="" loading="lazy"></span>
+        <span class="card-title">
+          <span class="card-name">Peach Pie</span>
+          <span class="card-cal">360 cal &middot; 1 slice (130 g)</span>
+        </span>
+        <span class="price-pill">$3.50</span>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+      <div class="card-body">
+        <a class="close-link" href="#sec-pastries">close &times;</a>
+        <div class="cal-badge"><strong>360</strong><span>calories</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Fat</dt><dd>17g</dd></div>
+          <div class="fact"><dt>Carbs</dt><dd>49g</dd></div>
+          <div class="fact"><dt>Sugar</dt><dd>24g</dd></div>
+          <div class="fact"><dt>Protein</dt><dd>3g</dd></div>
+        </dl>
+        <div class="detail"><h4>ingredients</h4><p>Peaches, Wheat flour, Butter, Sugar, Cinnamon</p></div>
+        <div class="detail"><h4>allergens</h4><div class="pills"><span class="pill">Gluten</span><span class="pill">Milk</span></div></div>
+      </div>
+    </article>
+      <a class="close-link" href="#nutrition-list">close section</a>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="nu-footer">
+    <p>Prepared in a kitchen that also handles milk, eggs, wheat, soy, tree nuts and peanuts, so cross-contact is possible.
+    Nutrition values are estimates for a standard serving. If you have a food allergy, please tell our baristas when you order.</p>
+  </footer>
+</body>
+</html>

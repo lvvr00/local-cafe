@@ -12,97 +12,848 @@
   </head>
 
   <body>
-      <header>
-          <div class="site-header">
-              <div class="wrap header-inner">
-                  <a href="index.html" class="logo">
-                      <span class="logo-mark">
-                          <img src="assets/cafe_logo.png" alt="CRAVE Logo">
-                      </span>
-                      <span class="logo-text">
-                          <span class="logo-name">CRAVE</span>
-                          <span class="logo-subtitle">Café &amp; Pastries</span>
-                      </span>
-                  </a>
+    <header>
+      <div class="site-header">
+        <div class="wrap header-inner">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">
+                <img src="assets/cafe_logo.png" alt="CRAVE Logo">
+            </span>
+            <span class="logo-text">
+                <span class="logo-name">CRAVE</span>
+                <span class="logo-subtitle">Café &amp; Pastries</span>
+            </span>
+          </a>
 
-              <nav class="nav-desktop" aria-label="Primary">
-                  <a href="index.html" >Home</a>
-                  <a href="about.html">Our Story</a>
-                  <a href="menu.html" class="active">Menu</a>
-                  <a href="news.html">News &amp; Promos</a>
-                  <a href="contact.html">Visit Us</a>
-              </nav>
+          <nav class="nav-desktop" aria-label="Primary">
+              <a href="index.html">Home</a>
+              <a href="about.html">Our Story</a>
+              <a href="menu.html" class="active">Menu</a>
+              <a href="news.html">News &amp; Promos</a>
+              <a href="contact.html">Visit Us</a>
+          </nav>
 
-              <div class="header-actions">
-                  <a href="order.html" class="btn btn-filled order-btn-desktop">Order Now</a>
-                  <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
-                  </label>
-              </div>
-              </nav>
-          </div>   
-              
-      </header>
-
-
-        <main>
-            
-            </section>
-
-            <section>
-
-            </section>
-        </main>
-
-        <!--footer sections-->
-        <footer class="site-footer"> 
-          <div class="wrap footer-grid">
-            <div class="footer-brand">
-              <div class="logo">
-                  <a href="index.html" class="logo">
-                      <span class="logo-mark">
-                          <img src="assets/cafe_logo.png" alt="CRAVE Logo">
-                      </span>
-                      <span class="logo-text-footer">
-                          <span class="logo-name-footer">CRAVE</span>
-                      </span>
-                  </a>
-              </div>
-              <p>A cozy neighborhood safe haven serving hot espresso,and fresh pastries and cinnamon rolls daily.</p>
-            </div>
-            <div>
-              <h4>Explore</h4>
-              <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="about.html">Our Story</a></li>
-                <li><a href="menu.html">Drinks &amp; Pastries Menu</a></li>
-                <li><a href="news.html">Events &amp; Promo</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Hours</h4>
-              <ul>
-                <li>Mon – Fri: 7:00 AM – 7:00 PM</li>
-                <li>Saturday: 8:00 AM – 8:00 PM</li>
-                <li>Sunday: 8:00 AM – 6:00 PM</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Find Us</h4>
-              <ul>
-                <li> 123 ABC Avenue<br>Something District</li>
-                <li><a href="contact.html" class="footer-link-accent">Get Directions &amp; Hours →</a></li>
-              </ul>
-            </div>
+          <div class="header-actions">
+              <a href="order.html" class="btn btn-filled order-btn-desktop">Order Now</a>
+              <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+              </label>
           </div>
-          <div class="wrap footer-bottom">
-            <p>© 2026 CRAVE Café. Crafted with warm espresso &amp; care.</p>
-            <div class="social-media">
-              <a href="">Instagram</a>
-              <a href="">Facebook</a>
-              <a href="">Tiktok</a>
+        </div>
+      </div>
+    </header>
+
+  <main class="order-main-wrapper">
+    <!-- Page Banner -->
+    <section class="order-banner">
+      <div class="wrap">
+        <h1 class="order-banner-title">Order Ahead</h1>
+        <p class="order-banner-desc">Select your favorite drinks and freshly baked pastries below, then complete your pickup or delivery details.</p>
+      </div>
+    </section>
+
+    <!-- Main Order Section -->
+    <section class="order-section">
+      <div class="wrap">
+        <!-- Category Jump Tabs (same sections as menu.html) -->
+        <nav class="order-tabs">
+          <ul class="order-tab-list">
+            <li><a href="#order-featured" class="order-tab-link semi-bold">Featured</a></li>
+            <li><a href="#order-coffee" class="order-tab-link semi-bold">Coffee</a></li>
+            <li><a href="#order-non-coffee" class="order-tab-link semi-bold">Non-coffee</a></li>
+            <li><a href="#order-pastries" class="order-tab-link semi-bold">Pastries</a></li>
+            <li><a href="#order-specials" class="order-tab-link semi-bold">Specials</a></li>
+          </ul>
+        </nav>
+
+        <!-- Semantic Order Form wrapping Menu Selections + Checkout Sidebar -->
+        <form class="order-layout" action="#order-checkout" method="get">
+          <!-- Left Column: Item Selection (mirrors menu.html) -->
+          <div class="order-menu-column">
+
+            <div id="order-featured" class="order-group">
+              <h2 class="order-group-title">Featured</h2>
+
+              <div class="order-items-grid">
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/strawberry-matcha-latte.jpg" alt="Strawberry matcha latte in a clear cup" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Strawberry Matcha Latte</h3>
+                      <span class="order-item-price bold">$3.95</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-strawberry-matcha-latte" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-strawberry-matcha-latte" name="opt_strawberry_matcha_latte" class="order-select">
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large-iced">Large Iced (+$0.75)</option>
+                          <option value="oat-iced">Iced w/ Oat Milk (+$0.50)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-strawberry-matcha-latte" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-strawberry-matcha-latte" name="qty_strawberry_matcha_latte" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/almond-croissant.jpg" alt="Almond croissant with chocolate drizzle" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Almond Croissant</h3>
+                      <span class="order-item-price bold">$2.95</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-almond-croissant" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-almond-croissant" name="opt_almond_croissant" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-almond-croissant" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-almond-croissant" name="qty_almond_croissant" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/souffle.jpg" alt="Fluffy pancake soufflé with whipped cream" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Pancake Soufflé</h3>
+                      <span class="order-item-price bold">$5.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-pancake-souffle" class="order-small-label semi-bold">Topping</label>
+                        <select id="order-opt-pancake-souffle" name="opt_pancake_souffle" class="order-select">
+                          <option value="classic">Classic Maple &amp; Cream</option>
+                          <option value="berry">Extra Strawberry Compote (+$0.75)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-pancake-souffle" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-pancake-souffle" name="qty_pancake_souffle" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
             </div>
+
+            <div id="order-coffee" class="order-group">
+              <h2 class="order-group-title">Coffee</h2>
+
+              <div class="order-items-grid">
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/americano.jpg" alt="Americano in a cup" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Americano</h3>
+                      <span class="order-item-price bold">$2.75</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-americano" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-americano" name="opt_americano" class="order-select">
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large">Large (+$0.75)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-americano" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-americano" name="qty_americano" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/iced-latte.jpg" alt="Iced latte with ice" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Iced Latte</h3>
+                      <span class="order-item-price bold">$3.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-iced-latte" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-iced-latte" name="opt_iced_latte" class="order-select">
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large-iced">Large Iced (+$0.75)</option>
+                          <option value="oat-iced">Iced w/ Oat Milk (+$0.50)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-iced-latte" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-iced-latte" name="qty_iced_latte" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/cappucino.jpg" alt="Cappuccino with milk foam" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Cappuccino</h3>
+                      <span class="order-item-price bold">$3.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-cappuccino" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-cappuccino" name="opt_cappuccino" class="order-select">
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="large-hot">Large Hot (+$0.75)</option>
+                          <option value="oat-hot">Hot w/ Oat Milk (+$0.50)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-cappuccino" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-cappuccino" name="qty_cappuccino" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/espresso.jpg" alt="Espresso shot in a small cup" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Espresso</h3>
+                      <span class="order-item-price bold">$2.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-espresso" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-espresso" name="opt_espresso" class="order-select">
+                          <option value="single">Single Shot (Regular)</option>
+                          <option value="double">Double Shot (+$1.00)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-espresso" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-espresso" name="qty_espresso" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/caramel-latte.jpg" alt="Caramel latte with whipped cream" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Caramel Latte</h3>
+                      <span class="order-item-price bold">$3.95</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-caramel-latte" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-caramel-latte" name="opt_caramel_latte" class="order-select">
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large">Large (+$0.75)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-caramel-latte" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-caramel-latte" name="qty_caramel_latte" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <div id="order-non-coffee" class="order-group">
+              <h2 class="order-group-title">Non-coffee</h2>
+
+              <div class="order-items-grid">
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/matcha-latte.jpg" alt="Matcha latte" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Matcha Latte</h3>
+                      <span class="order-item-price bold">$3.75</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-matcha-latte" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-matcha-latte" name="opt_matcha_latte" class="order-select">
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="oat-iced">Iced w/ Oat Milk (+$0.50)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-matcha-latte" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-matcha-latte" name="qty_matcha_latte" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/hot-chocolate.jpg" alt="Hot chocolate with whipped cream" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Hot Chocolate</h3>
+                      <span class="order-item-price bold">$3.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-hot-chocolate" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-hot-chocolate" name="opt_hot_chocolate" class="order-select">
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="large-hot">Large Hot (+$0.75)</option>
+                          <option value="extra-cream">Extra Whipped Cream (+$0.25)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-hot-chocolate" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-hot-chocolate" name="qty_hot_chocolate" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/spiced-chai-tea.jpg" alt="Spiced chai tea" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Spiced Chai Tea</h3>
+                      <span class="order-item-price bold">$3.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-spiced-chai-tea" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-spiced-chai-tea" name="opt_spiced_chai_tea" class="order-select">
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large">Large (+$0.75)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-spiced-chai-tea" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-spiced-chai-tea" name="qty_spiced_chai_tea" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/boba-milk-tea.jpg" alt="Boba milk tea with tapioca pearls" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Boba Milk Tea</h3>
+                      <span class="order-item-price bold">$3.75</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-boba-milk-tea" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-boba-milk-tea" name="opt_boba_milk_tea" class="order-select">
+                          <option value="regular">Regular Boba</option>
+                          <option value="less-sugar">Less Sugar</option>
+                          <option value="extra-boba">Extra Boba (+$0.50)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-boba-milk-tea" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-boba-milk-tea" name="qty_boba_milk_tea" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/iced-lemon-tea.jpg" alt="Iced lemon tea with lemon slices" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Iced Lemon Tea</h3>
+                      <span class="order-item-price bold">$2.75</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-iced-lemon-tea" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-iced-lemon-tea" name="opt_iced_lemon_tea" class="order-select">
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large-iced">Large Iced (+$0.75)</option>
+                          <option value="less-ice">Less Ice (Regular)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-iced-lemon-tea" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-iced-lemon-tea" name="qty_iced_lemon_tea" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/hibicus-red-tea.jpg" alt="Red hibiscus iced tea" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Hibiscus Iced Tea</h3>
+                      <span class="order-item-price bold">$2.95</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-hibiscus-iced-tea" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-hibiscus-iced-tea" name="opt_hibiscus_iced_tea" class="order-select">
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large-iced">Large Iced (+$0.75)</option>
+                          <option value="less-ice">Less Ice (Regular)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-hibiscus-iced-tea" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-hibiscus-iced-tea" name="qty_hibiscus_iced_tea" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <div id="order-pastries" class="order-group">
+              <h2 class="order-group-title">Pastries</h2>
+
+              <div class="order-items-grid">
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/cinnamonroll.jpg" alt="Cinnamon roll with icing" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Cinnamon Roll</h3>
+                      <span class="order-item-price bold">$3.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-cinnamon-roll" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-cinnamon-roll" name="opt_cinnamon_roll" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-cinnamon-roll" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-cinnamon-roll" name="qty_cinnamon_roll" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/croissant.jpg" alt="French butter croissant" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">French Croissant</h3>
+                      <span class="order-item-price bold">$2.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-french-croissant" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-french-croissant" name="opt_french_croissant" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-french-croissant" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-french-croissant" name="qty_french_croissant" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/choco-cookies.jpg" alt="Chocolate chip cookies" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Chocolate Chip Cookie</h3>
+                      <span class="order-item-price bold">$2.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-choco-chip-cookie" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-choco-chip-cookie" name="opt_choco_chip_cookie" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-choco-chip-cookie" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-choco-chip-cookie" name="qty_choco_chip_cookie" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/choco-roll.jpg" alt="Chocolate roll" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Chocolate Roll</h3>
+                      <span class="order-item-price bold">$3.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-chocolate-roll" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-chocolate-roll" name="opt_chocolate_roll" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-chocolate-roll" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-chocolate-roll" name="qty_chocolate_roll" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/apple-pie.jpg" alt="Slice of apple pie" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Apple Pie</h3>
+                      <span class="order-item-price bold">$3.95</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-apple-pie" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-apple-pie" name="opt_apple_pie" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                          <option value="ice-cream">Warmed w/ Vanilla Ice Cream (+$1.00)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-apple-pie" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-apple-pie" name="qty_apple_pie" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/fruit-galette.jpg" alt="Fruit galette" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Fruit Galette</h3>
+                      <span class="order-item-price bold">$4.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-fruit-galette" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-fruit-galette" name="opt_fruit_galette" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-fruit-galette" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-fruit-galette" name="qty_fruit_galette" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/honey-toast.jpg" alt="Honey toast with whipped cream" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Honey Toast</h3>
+                      <span class="order-item-price bold">$5.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-honey-toast" class="order-small-label semi-bold">Topping</label>
+                        <select id="order-opt-honey-toast" name="opt_honey_toast" class="order-select">
+                          <option value="classic">Classic Honey &amp; Cream</option>
+                          <option value="ice-cream">Add Vanilla Ice Cream (+$1.00)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-honey-toast" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-honey-toast" name="qty_honey_toast" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <div id="order-specials" class="order-group">
+              <h2 class="order-group-title">Specials</h2>
+
+              <div class="order-items-grid">
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/peppermint-latte.jpg" alt="Peppermint latte" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Peppermint Latte</h3>
+                      <span class="order-item-price bold">$4.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-peppermint-latte" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-peppermint-latte" name="opt_peppermint_latte" class="order-select">
+                          <option value="hot">Hot (Regular)</option>
+                          <option value="iced">Iced (Regular)</option>
+                          <option value="large">Large (+$0.75)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-peppermint-latte" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-peppermint-latte" name="qty_peppermint_latte" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/gingerbread-cookies.jpg" alt="Gingerbread cookies" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Gingerbread Cookie</h3>
+                      <span class="order-item-price bold">$2.75</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-gingerbread-cookie" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-gingerbread-cookie" name="opt_gingerbread_cookie" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-gingerbread-cookie" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-gingerbread-cookie" name="qty_gingerbread_cookie" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/honey-toast.jpg" alt="Handmade chocolates" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Chocolate</h3>
+                      <span class="order-item-price bold">$3.25</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-chocolate" class="order-small-label semi-bold">Flavor</label>
+                        <select id="order-opt-chocolate" name="opt_chocolate" class="order-select">
+                          <option value="dark">Dark Chocolate</option>
+                          <option value="milk">Milk Chocolate</option>
+                          <option value="assorted">Assorted</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-chocolate" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-chocolate" name="qty_chocolate" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/christmas-tarts.jpg" alt="Egg tarts" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Egg Tart</h3>
+                      <span class="order-item-price bold">$2.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-egg-tart" class="order-small-label semi-bold">Serving</label>
+                        <select id="order-opt-egg-tart" name="opt_egg_tart" class="order-select">
+                          <option value="warmed">Warmed Up</option>
+                          <option value="regular">Room Temperature</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-egg-tart" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-egg-tart" name="qty_egg_tart" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="order-item-card">
+                  <img src="assets/menu-pictures/choco-milkshake.jpg" alt="Chocolate milkshake" class="order-item-img">
+                  <div class="order-item-body">
+                    <div class="order-item-top">
+                      <h3 class="order-item-name">Chocolate Milkshake</h3>
+                      <span class="order-item-price bold">$4.50</span>
+                    </div>
+                    <div class="order-item-controls">
+                      <div class="order-control-field">
+                        <label for="order-opt-chocolate-milkshake" class="order-small-label semi-bold">Option</label>
+                        <select id="order-opt-chocolate-milkshake" name="opt_chocolate_milkshake" class="order-select">
+                          <option value="regular">Regular</option>
+                          <option value="large">Large (+$0.75)</option>
+                          <option value="extra-cream">Extra Whipped Cream (+$0.25)</option>
+                        </select>
+                      </div>
+                      <div class="order-qty-field">
+                        <label for="order-qty-chocolate-milkshake" class="order-small-label semi-bold">Qty</label>
+                        <input type="number" id="order-qty-chocolate-milkshake" name="qty_chocolate_milkshake" class="order-qty-input" min="0" max="10" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
           </div>
-        </footer>
-          
-    </body>
+
+          <!-- Right Column: Cart Summary & Checkout Form -->
+          <aside id="order-checkout" class="order-cart-box">
+            <div class="order-cart-header">
+              <h2 class="order-cart-title">Your Order Details</h2>
+              <p class="order-cart-sub">Ready in ~15 mins for counter pickup</p>
+            </div>
+
+            <ul class="order-summary-list">
+              <li class="order-summary-row">
+                <span>Counter Pickup</span>
+                <span class="semi-bold">Free</span>
+              </li>
+              <li class="order-summary-row">
+                <span>Local Delivery</span>
+                <span class="semi-bold">$1.50</span>
+              </li>
+              <li class="order-summary-row order-summary-promo">
+                <span>Student Promo Code</span>
+                <span class="bold">CRAVE10 (10% Off)</span>
+              </li>
+            </ul>
+
+            <div class="order-form-group">
+              <label for="order-type" class="order-label semi-bold">Order Type</label>
+              <select id="order-type" name="order_type" class="order-input">
+                <option value="pickup">Counter Pickup (Ready ~15 mins)</option>
+                <option value="delivery">Local Delivery (+$1.50)</option>
+              </select>
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-time" class="order-label semi-bold">Pickup / Delivery Time</label>
+              <select id="order-time" name="order_time" class="order-input">
+                <option value="asap">ASAP (~15 mins)</option>
+                <option value="30min">In 30 mins</option>
+                <option value="1hour">In 1 hour</option>
+              </select>
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-name" class="order-label semi-bold">Your Name</label>
+              <input type="text" id="order-name" name="customer_name" class="order-input" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-phone" class="order-label semi-bold">Phone Number</label>
+              <input type="tel" id="order-phone" name="customer_phone" class="order-input" placeholder="012 345 678" required>
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-address" class="order-label semi-bold">Delivery Address (if delivery)</label>
+              <input type="text" id="order-address" name="delivery_address" class="order-input" placeholder="Street or landmark in Phnom Penh">
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-promo" class="order-label semi-bold">Promo Code</label>
+              <input type="text" id="order-promo" name="promo_code" class="order-input" placeholder="Enter CRAVE10">
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-payment" class="order-label semi-bold">Payment Method</label>
+              <select id="order-payment" name="payment_method" class="order-input">
+                <option value="counter">Pay at Counter</option>
+                <option value="khqr">KHQR / ABA</option>
+                <option value="card">Credit / Debit Card</option>
+              </select>
+            </div>
+
+            <div class="order-form-group">
+              <label for="order-notes" class="order-label semi-bold">Special Notes (optional)</label>
+              <textarea id="order-notes" name="order_notes" class="order-input order-textarea" rows="3" placeholder="Less ice, 50% sugar, extra napkins..."></textarea>
+            </div>
+
+            <div class="order-form-actions">
+              <button type="submit" class="order-btn-submit semi-bold">Place Order</button>
+              <button type="reset" class="order-btn-reset semi-bold">Clear Form</button>
+            </div>
+          </aside>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+    <!--footer sections-->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+              <a href="index.html" class="logo">
+                  <span class="logo-mark">
+                      <img src="assets/cafe_logo.png" alt="CRAVE Logo">
+                  </span>
+                  <span class="logo-text-footer">
+                      <span class="logo-name-footer">CRAVE</span>
+                  </span>
+              </a>
+          </div>
+          <p>A cozy neighborhood safe haven serving hot espresso,and fresh pastries and cinnamon rolls daily.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="menu.html">Drinks &amp; Pastries Menu</a></li>
+            <li><a href="news.html">Events &amp; Promo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon – Fri: 7:00 AM – 7:00 PM</li>
+            <li>Saturday: 8:00 AM – 8:00 PM</li>
+            <li>Sunday: 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Find Us</h4>
+          <ul>
+            <li> 123 ABC Avenue<br>Something District</li>
+            <li><a href="contact.html" class="footer-link-accent">Get Directions &amp; Hours →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>© 2026 CRAVE Café. Crafted with warm espresso &amp; care.</p>
+        <div class="social-media">
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
+          <a href="">Tiktok</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>

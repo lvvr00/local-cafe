@@ -3,6 +3,8 @@
 @import url("/css/about-style.css");
 @import url("/css/news-style.css");
 @import url("/css/contact-style.css");
+@import url("/css/order-style.css");
+@import url("/css/nutrition-nojs.css");
 
 * {
     box-sizing: border-box;
@@ -51,7 +53,7 @@ ul li {
 }
   
 /*logo*/
-  .logo {
+.logo {
     display: flex;
     align-items: center;
     gap: .75rem;

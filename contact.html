@@ -53,72 +53,70 @@
           </div>
         </section>
       
-        <section></section>
-          <div class="contacts-card wrap">
-            <div class="card text-center">
+        <section>
+          <div class=" wrap contacts-card">
+            <div class="inside-contacts-cards">
               <h3>Call Us</h3>
               <p>(+855) 123-345-678</p>
             </div>
-            <div class="card text-center">
+            <div class="inside-contacts-cards">
               <h3>Email Us</h3>
-              <p>hello@thevelvetoat.example</p>
+              <p>localcafé123@gmail.com</p>
             </div>
-            <div class="card text-center">
-              <h3>Email Us</h3>
-              <p>hello@thevelvetoat.example</p>
+            <div class="inside-contacts-cards">
+              <h3>Social Media</h3>
+              <p>@abcd1234</p>
             </div>
-            <div class="card text-center">
-              <h3>Email Us</h3>
-              <p>hello@thevelvetoat.example</p>
+            <div class="inside-contacts-cards">
+              <h3>Visit us</h3>
+              <p>123 Avenue</p>
             </div>
           </div>
 
-          <div class="wrap grid grid-2">
-      
-            <div class="stack">
-      
-              <div class="card" style="padding:1.5rem;">
-                <h3 style="font-size:1.1rem;">Opening Hours</h3>
-                <div class="mt-2" style="font-size:.9rem;">
-                  <div>
-                    <span>Monday – Friday</span>
-                    <strong>7:00 AM – 7:00 PM</strong>
+          <div class="wrap contacts-grid">
+            <div class="contacts-first-grid">
+              <div class="inside-contacts-cards">
+                <h3>Opening Hours</h3>
+                <div class="cards-stuff">
+                  <div class="contacts-card-info">
+                    <p>Monday – Friday</p>
+                    <p><strong>7:00 AM – 7:00 PM</strong></p>
                     </div>
-                  <div style="display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #F4ECE1;">
-                    <span>Saturday</span>
-                    <strong>8:00 AM – 8:00 PM (Acoustic Night)</strong>
+                  <div class="contacts-card-info">
+                    <p>Saturday</p>
+                    <p><strong>8:00 AM – 8:00 PM</strong></p>
                   </div>
-                  <div style="display:flex;justify-content:space-between;padding:.6rem 0;">
-                    <span>Sunday</span>
-                    <strong>8:00 AM – 6:00 PM</strong>
+                  <div class="contacts-card-info">
+                    <p>Sunday</p>
+                    <p><strong>8:00 AM – 6:00 PM</strong></p>
                   </div>
                 </div>
               </div>
       
-              <div class="card" style="padding:1.5rem;">
-                <h3 style="font-size:1.1rem;">Where to Find Us</h3>
-                <div class="mt-2 text-center" style="background:#F4ECE1;border-radius:1rem;padding:2rem 1.5rem;">
-                  <p style="font-weight:700;">482 Willowbrook Avenue</p>
-                  <p style="font-size:.8rem;color:rgba(59,35,25,.7);">Corner of 5th &amp; Elm, Historic District</p>
-                  <p style="font-size:.78rem;color:#5D6A50;font-weight:600;margin-top:.35rem;">🚲 Free bike rack &amp; rear garden parking</p>
+              <div class="inside-contacts-cards">
+                <h3>Where to Find Us</h3>
+                <div class="map">
+                  <p style="font-weight:700;">123 Street</p>
+                  <p class="promo-contact"> Free bike rack &amp; parking</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.103088901282!2d104.89836541140325!3d11.616000088540755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095177ee61fd7d%3A0xa66cfdf83a58b2ae!2sAmerican%20University%20of%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1795460244455!5m2!1sen!2skh" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                   <a href="https://maps.google.com/?q=482+Willowbrook+Avenue" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-2" style="padding:.6rem 1.2rem;font-size:.8rem;">Open in Google Maps</a>
                 </div>
               </div>
       
             </div>
       
-            <div class="card">
-              <h2">Send Us a Cozy Note</h2>
-              <p>Questions about catering, event bookings, or bean origins? Drop a line below.</p>
+            <div class="inside-contacts-cards">
+              <h2">Send Us a Message</h2>
+              <p>Questions about catering, event bookings, or our origins? Drop a message below.</p>
       
-              <form class="mt-2" action="mailto:hello@thevelvetoat.example" method="post" enctype="text/plain">
+              <form action="mailto:hello@thevelvetoat.example" method="post" enctype="text/plain">
                 <div class="field">
                   <label for="c-name">Your Name</label>
-                  <input id="c-name" type="text" name="name" required placeholder="e.g., Sarah Jenkins">
+                  <input id="c-name" type="text" name="name" required placeholder="e.g., John Doe">
                 </div>
                 <div class="field">
                   <label for="c-email">Email Address</label>
-                  <input id="c-email" type="email" name="email" required placeholder="sarah@example.com">
+                  <input id="c-email" type="email" name="email" required placeholder="johndoe@example.com">
                 </div>
                 <div class="field">
                   <label for="c-subject">Subject</label>
@@ -126,7 +124,7 @@
                     <option>General Inquiry</option>
                     <option>Private Event/Bookings</option>
                     <option>Catering Request</option>
-                    <option>Feedback &amp; Words of Encouragement</option>
+                    <option>Feedback</option>
                   </select>
                 </div>
 
@@ -135,7 +133,7 @@
                   <textarea id="c-message" name="message" rows="4" required placeholder="Tell us what's on your mind…"></textarea>
                 </div>
                 <button type="submit" class="btn btn-accent btn-block">Send Message</button>
-                <p class="form-note">This opens your email app with your note pre-filled — this is a static page, so there's no server to submit the form directly.</p>
+                <p class="form-note">This opens your email app with your note pre-filled.</p>
               </form>
             </div>
       
@@ -157,7 +155,7 @@
                       </span>
                   </a>
               </div>
-              <p>A cozy neighborhood safe haven serving hot espresso,and fresh pastries and cinnamon rolls daily.</p>
+              <p>A cozy neighborhood safe haven serving hot espresso,and fresh pastries daily.</p>
             </div>
             <div>
               <h4>Explore</h4>
